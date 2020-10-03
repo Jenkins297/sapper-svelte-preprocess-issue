@@ -52,8 +52,8 @@
 </figure>
 
 <p>
-  <strong>Try editing this file (src/routes/index.svelte) to test live
-    reloading.</strong>
+  <strong>The form below works just fine. Default is prevented. The form in the
+    nested layout route (NAVBAR) does not.</strong>
 </p>
 
 <form on:submit|preventDefault={handleSubmit}>
