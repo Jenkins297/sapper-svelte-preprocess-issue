@@ -6,7 +6,6 @@
 
 <style>
   h1,
-  figure,
   p {
     text-align: center;
     margin: 0 auto;
@@ -19,24 +18,8 @@
     margin: 0 0 0.5em 0;
   }
 
-  figure {
-    margin: 0 0 1em 0;
-  }
-
-  img {
-    width: 100%;
-    max-width: 400px;
-    margin: 0 0 1em 0;
-  }
-
   p {
     margin: 1em auto;
-  }
-
-  @media (min-width: 480px) {
-    h1 {
-      font-size: 4em;
-    }
   }
 </style>
 
@@ -44,16 +27,12 @@
   <title>Sapper project template</title>
 </svelte:head>
 
-<h1>Great success!</h1>
-
-<figure>
-  <img alt="Success Kid" src="successkid.jpg" />
-  <figcaption>Have fun with Sapper!</figcaption>
-</figure>
+<h1>Form in route in folder with nested _layout.svelte</h1>
 
 <p>
-  <strong>Try editing this file (src/routes/index.svelte) to test live
-    reloading.</strong>
+  If you navigate from this page from another page within the Sapper app, the
+  form will prevent default. If you load this page first (or refresh) the
+  preventDefault will fail, and the form will reload the page on submit.
 </p>
 
 <form on:submit|preventDefault={handleSubmit}>
